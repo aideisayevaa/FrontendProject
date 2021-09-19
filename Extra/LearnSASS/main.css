@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Variables */
+/* @mixin border {
+    border: 5px solid black;
+} */
+.kutu, body .container .kutular .box1, body .container .kutular .box2 {
+  height: 200px;
+  width: 200px;
+  background-color: #ff3838;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Burda yazilanlar .css-de gorunmur */
+body {
+  background-color: #ffb8b8;
+}
+
+body .container {
+  height: 1000px;
+  width: 900px;
+  margin: 0px auto;
+  background-color: #67e6dc;
+}
+
+body .container header {
+  height: 50px;
+  width: 900px;
+  background-color: #ff3838;
+}
+
+body .container header ul li {
+  float: left;
+}
+
+body .container header ul li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #7d5fff;
+}
+
+body .container header ul li a:hover {
+  color: #ffb8b8;
+}
+
+body .container .kutular {
+  height: 500px;
+  width: 400px;
+  margin: 40px auto;
+  background-color: #7d5fff;
+}
+
+body .container .kutular .box1 {
+  border-width: 7px;
+  border-style: dashed;
+  border-color: blue;
+}
+
+body .container .kutular .box2 {
+  border-width: 4px;
+  border-style: solid;
+  border-color: green;
+}
+/*# sourceMappingURL=main.css.map */

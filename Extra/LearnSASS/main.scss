@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* Variables */
+$ana-renk: #ffb8b8;
+$header:#ff3838;
+$kutu: #7d5fff;
+$cerceve:#67e6dc;
+/* @mixin border {
+    border: 5px solid black;
+} */
+
+@mixin border($genislik,$tip,$renk) {
+    border-width: $genislik;
+    border-style: $tip;
+    border-color: $renk;
+}
+
+.kutu {
+    height: 200px;
+    width: 200px;
+    background-color: $header;
+    float: left;
+    margin-right: 10px;
+}
+
+
+/* Burda yazilanlar .css-de gorunmur */
+
+body {
+    background-color: $ana-renk;
+
+    .container {
+        height: 1000px;
+        width: 900px;
+        margin: 0px auto;
+        background-color: $cerceve;
+
+        header {
+            height: 50px;
+            width: 900px;
+            background-color: $header;
+
+            ul {
+                li {
+                    float: left;
+
+                    a {
+                        display: block;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        width: 150px;
+                        text-decoration: none;
+                        font-size: 24px;
+                        color: $kutu;
+
+                        &:hover {
+                            color: $ana-renk;
+                        }
+                    }
+                }
+            }
+        }
+
+        .kutular {
+            height: 500px;
+            width: 400px;
+            margin: 40px auto;
+            background-color: $kutu;
+
+            .box1 {
+                @extend .kutu;
+                @include border(7px,dashed,blue);
+            }
+
+            .box2 {
+                @extend .kutu;
+                @include border(4px,solid,green);
+            }
+        }
+    }
+}
