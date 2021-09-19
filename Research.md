@@ -1,0 +1,1 @@
+Arasdirma movzulari burada olacaq
