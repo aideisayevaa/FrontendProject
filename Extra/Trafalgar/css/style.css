@@ -1,0 +1,140 @@
+/* Navbar section start */
+
+#navbar {
+    padding: 40px 0;
+}
+
+.navbar-logo span {
+    background: #458FF6;
+    border-radius: 50%;
+    color: white;
+    width: 41px;
+    height: 41px;
+    font-size: 26px;
+}
+
+.navbar-logo p {
+    font-size: 24px;
+    color: #233348;
+    font-weight: 700;
+    margin-left: 12px;
+}
+
+.navbar-menu {
+    color: #1F1534;
+    font-size: 18px;
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+/* Navbar section end */
+
+/* Header section start */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.header-content {
+    width: 86%;
+}
+
+.header-content h1 {
+    font-size: 48px;
+}
+
+.header-content p {
+    font-size: 21px;
+    line-height: 32px;
+    color: #7D7987;
+    margin: 25px 0px;
+}
+
+.header-content button {
+    border: none;
+    background: #458FF6;
+    border-radius: 32px;
+    width: 200px;
+    height: 56px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.header-picture svg {
+    width: 100%;
+}
+
+/* Header section end */
+
+/* Services section start */
+
+#services {
+    position: relative;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+    z-index: 2;
+}
+
+.services-header {
+    grid-area: 1 / 1 / span 1 / span 3;
+    text-align: center;
+}
+
+.services-item {
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+}
+
+.services-item p {
+    width: 85%;
+}
+
+.services-btn {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+/* Services section end */
+
+/* About section start */
+
+.about {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 60px;
+}
+
+.about-picture svg,
+.about-second svg {
+    width: 100%;
+}
+
+.about-second {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 60px;
+}
+
+/* About section end */
+
+/* Testimonials section start */
+
+.testimonials{
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.testimonials .first-text {
+    color: white;
+}
