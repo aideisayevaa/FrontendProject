@@ -1,0 +1,51 @@
+div.demo {
+  /* classlarin adini da deyisenlerle teyin etmek olar */
+  color: darkkhaki;
+  font-size: 24px;
+}
+
+.test {
+  /* Deyisenleri tek class xaricinde yox hemcinin class daxilinde de teyin etmek olar */
+  font-size: 24px;
+  background-color: darkkhaki;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.text, .text2 {
+  color: red;
+  border: 1px solid red;
+}
+
+.text2 {
+  background-color: green;
+}
+
+.error, .success, .warning, .info {
+  border: 1px solid #21b179;
+  padding: 39px;
+  width: 40%;
+  color: #21b179;
+  margin: 20px;
+}
+
+.error {
+  border-color: red;
+  color: #ff8080;
+}
+
+.success {
+  border-color: green;
+  color: green;
+}
+
+.warning {
+  border-color: orange;
+  color: orange;
+}
+
+.text-font {
+  font-family: 'sans-serif';
+  font-weight: 700;
+  font-font-size: 80px;
+}

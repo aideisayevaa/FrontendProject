@@ -1,0 +1,67 @@
+$size24:24px;
+$color:darkkhaki;
+$name:"demo";
+$size1:5px;
+$size2:8px;
+
+
+div.#{$name}{ /* classlarin adini da deyisenlerle teyin etmek olar */
+  color: $color;
+  font-size: $size24;
+}
+
+.test{
+  $rad:3px; /* Deyisenleri tek class xaricinde yox hemcinin class daxilinde de teyin etmek olar */
+  font-size: $size24;
+  background-color: $color;
+  font-weight: 700;
+  border-radius: $rad;
+}
+
+.text{
+  color: red;
+  border: 1px solid red;
+}
+
+.text2{
+  @extend .text;
+  background-color: green;
+}
+
+%message{
+  border: 1px solid #21b179;
+  padding: 3*($size1+$size2); //+ - * / bu operatorlardan istifade etmek olar cssde sadece neec px oldugunu gosterir % olanlari da operatorlarla yazaq bilerik
+  width: 40%;
+  color: #21b179;
+  margin: 20px
+}
+
+.error{
+  @extend %message;
+  border-color: red;
+  color: red + gray; //renkleri de toplamaq olar
+}
+
+.success{
+  @extend %message;
+  border-color: green;
+  color: green;
+}
+
+.warning{
+  @extend %message;
+  border-color: orange;
+  color: orange;
+}
+
+.info{
+  @extend %message
+}
+
+.text-font{
+  font: {
+    family:'sans-serif';
+    weight:700;
+    font-size: 80px;
+  }
+}

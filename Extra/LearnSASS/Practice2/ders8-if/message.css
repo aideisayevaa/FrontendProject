@@ -1,0 +1,38 @@
+.example {
+  height: 50px;
+  width: 50px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 25px;
+  border-left-color: red;
+}
+
+.error, .success, .warning, .info {
+  border: 1px solid #21b179;
+  padding: 10px;
+  width: 40%;
+  color: #21b179;
+  margin: 20px;
+}
+
+.error {
+  border-color: red;
+  color: red;
+  width: 400px;
+}
+
+.success {
+  border-color: green;
+  color: green;
+  width: 400px;
+}
+
+.warning {
+  border-color: orange;
+  color: orange;
+  width: 400px;
+}
+
+.info {
+  width: 400px;
+}

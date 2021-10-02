@@ -1,0 +1,43 @@
+/* @mixin boxRadius {
+  border-radius: 50px;
+} */
+
+@mixin boxRadius($value) {
+  border-radius: $value;
+}
+
+
+%message{
+    border: 1px solid #21b179;
+    padding: 10px;
+    width: 40%;
+    color: #21b179;
+    margin: 20px
+  }
+  
+  .error{
+    @extend %message;
+    border-color: red;
+    color: red; 
+    /* @include boxRadius; */
+    @include boxRadius(5px);
+  }
+  
+  .success{
+    @extend %message;
+    border-color: green;
+    color: green;
+    @include boxRadius(10px);
+  }
+  
+  .warning{
+    @extend %message;
+    border-color: orange;
+    color: orange;
+    @include boxRadius(15px);
+  }
+  
+  .info{
+    @extend %message;
+    @include boxRadius(20px);
+  }

@@ -1,0 +1,75 @@
+@mixin special($size, $circle:false) {
+  width: $size;
+
+  @if $circle {
+    border-radius: $size;
+  }
+}
+
+
+@mixin ucbucaq($size, $color, $direction) {
+  height: 50px;
+  width: 50px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: $size/2;
+
+  @if $direction==top {
+    border-top-color: $color;
+  }
+
+  @else if $direction==right {
+    border-right-color: $color;
+  }
+
+  @else if $direction==left {
+    border-left-color: $color;
+  }
+
+  @else if $direction==bottom {
+    border-bottom-color: $color;
+  }
+
+  @else {
+    @error "Deyerleri yeniden daxil edin"
+  }
+}
+
+
+.example {
+  @include ucbucaq(50px, red, left)
+}
+
+%message {
+  border: 1px solid #21b179;
+  padding: 10px;
+  width: 40%;
+  color: #21b179;
+  margin: 20px
+}
+
+.error {
+  @extend %message;
+  border-color: red;
+  color: red;
+  @include special(400px);
+}
+
+.success {
+  @extend %message;
+  border-color: green;
+  color: green;
+  @include special(400px);
+}
+
+.warning {
+  @extend %message;
+  border-color: orange;
+  color: orange;
+  @include special(400px, false);
+}
+
+.info {
+  @extend %message;
+  @include special(400px, false);
+}

@@ -1,0 +1,16 @@
+@import "variables";
+@import "message";
+
+
+div.#{$name}{ 
+  color: $color;
+  font-size: $size24;
+}
+
+.text-font{
+  font: {
+    family:'sans-serif';
+    weight:700;
+    size: 80px;
+  }
+}

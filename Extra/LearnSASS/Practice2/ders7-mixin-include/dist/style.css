@@ -1,0 +1,40 @@
+.info, .warning, .success, .error {
+  border: 1px solid #21b179;
+  padding: 10px;
+  width: 40%;
+  color: #21b179;
+  margin: 20px;
+}
+
+.error {
+  border-color: red;
+  color: red;
+  border-radius: 5px;
+}
+
+.success {
+  border-color: green;
+  color: green;
+  border-radius: 10px;
+}
+
+.warning {
+  border-color: orange;
+  color: orange;
+  border-radius: 15px;
+}
+
+.info {
+  border-radius: 20px;
+}
+
+div.demo {
+  color: darkkhaki;
+  font-size: 24px;
+}
+
+.text-font {
+  font-family: "sans-serif";
+  font-weight: 700;
+  font-size: 80px;
+}
