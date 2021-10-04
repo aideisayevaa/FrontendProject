@@ -21,7 +21,7 @@ div.demo {
   background-color: green;
 }
 
-.error, .success, .warning, .info {
+.message, .error, .success, .warning, .info {
   border: 1px solid #21b179;
   padding: 39px;
   width: 40%;
@@ -47,5 +47,5 @@ div.demo {
 .text-font {
   font-family: 'sans-serif';
   font-weight: 700;
-  font-font-size: 80px;
+  font-size: 80px;
 }

@@ -1,0 +1,27 @@
+/* 
+$sizes: 5px,10px,15px,17px;
+@each $size in $sizes {
+  .fontSize-#{$size}{
+    font-size: $size;
+  }
+} */
+
+/* @for $value from 1 through 7{ //to yazilanda 7  daxil deyil through yazilanda daxildi 
+  $value:$value*5;
+  .fontSize-#{$value}{
+    font-size: #{$value}px;
+  }
+} */
+
+$x:1;
+$size:5px;
+
+@while $x<10 {
+  $test: $x*5;
+
+  .fontSize-#{$test} {
+    font-size: $size*$x;
+  }
+
+  $x:$x + 1;
+}

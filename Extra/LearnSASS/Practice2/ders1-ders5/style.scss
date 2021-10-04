@@ -9,7 +9,6 @@ div.#{$name}{ /* classlarin adini da deyisenlerle teyin etmek olar */
   color: $color;
   font-size: $size24;
 }
-
 .test{
   $rad:3px; /* Deyisenleri tek class xaricinde yox hemcinin class daxilinde de teyin etmek olar */
   font-size: $size24;
@@ -28,7 +27,7 @@ div.#{$name}{ /* classlarin adini da deyisenlerle teyin etmek olar */
   background-color: green;
 }
 
-%message{
+.message{
   border: 1px solid #21b179;
   padding: 3*($size1+$size2); //+ - * / bu operatorlardan istifade etmek olar cssde sadece neec px oldugunu gosterir % olanlari da operatorlarla yazaq bilerik
   width: 40%;
@@ -37,31 +36,31 @@ div.#{$name}{ /* classlarin adini da deyisenlerle teyin etmek olar */
 }
 
 .error{
-  @extend %message;
+  @extend .message;
   border-color: red;
   color: red + gray; //renkleri de toplamaq olar
 }
 
 .success{
-  @extend %message;
+  @extend .message;
   border-color: green;
   color: green;
 }
 
 .warning{
-  @extend %message;
+  @extend .message;
   border-color: orange;
   color: orange;
 }
 
 .info{
-  @extend %message
+  @extend .message
 }
 
 .text-font{
   font: {
     family:'sans-serif';
     weight:700;
-    font-size: 80px;
+    size: 80px;
   }
 }
