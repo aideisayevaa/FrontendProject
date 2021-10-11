@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(color) {
+            document.bgColor = color;
+             /* background-color js-de bgColor olaraq yazilir 
+             umumi document-in backgroundunu nezerde tutur 
+             color parametrdi
+             */
+
+             /* ctrl + shift + J */
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <input type="button" value="Ag" onclick="changeColor('white')"> <!-- value-de yadigimiz button daxilinde yazilandi onclick-den sonra funksiyanin adini yaziriq -->
+        <input type="button" value="Qara" onclick="changeColor('black')">
+    </form>
+
+</body>
+
+</html>

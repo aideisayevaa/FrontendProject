@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .button-box {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            border: 2px solid black;
+            border-radius: 31px;
+            padding: 15px 32px;
+            background: white;
+            color: #407893;
+            text-align: center;
+        }
+
+        .btn {
+            background: none;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: 62px;
+            transition: .3s ease;
+            padding: 14px 24px;
+            color: #407893;
+            font-size: 16px;
+            font-weight: bold;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="button-box">
+            <h1>Background Color : <span class="color">#f1f5f8</span></h1>
+            <button class="btn" id="btn">Change Color</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
