@@ -5,60 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .photo img {
-            width: 100%;
-            z-index: 1;
-        }
-
-        .container {
-            position: absolute;
-            top: 30%;
-            left: 38%;
-            text-align: center;
-            font-size: 30px;
-            font-weight: 700;
-            color: rgb(245, 10, 10);
-            z-index: 2;
-        }
-
-        .btn {
-            background: rgba(242, 255, 205, 0.582);
-            border: 2px solid rgb(245, 10, 10);
-            border-radius: 20px;
-            padding: 10px 20px;
-            color: rgb(245, 10, 10);
-            cursor: pointer;
-            transition: .5s ease;
-            margin: 30px 7px;
-        }
-
-        .btn:hover {
-            background: rgba(255, 255, 255, 0.288);
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Counter</title>
 </head>
 
 <body>
     <div class="photo">
-        <img src="./carolina-munemasa-sEpLDQ0QOVw-unsplash.jpg" alt="">
+        <img src="./nasa-Q1p7bh3SHj8-unsplash (2).jpg" alt="">
     </div>
     <div class="container">
         <h1>Counter</h1>
-        <h2>0</h2>
+        <h2 id="value">0</h2>
         <div class="btns">
-            <button class="btn">Decrease</button>
-            <button class="btn">Reset</button>
-            <button class="btn">Increase</button>
+            <button class="btn decrease">Decrease</button>
+            <button class="btn reset">Reset</button>
+            <button class="btn increase">Increase</button>
         </div>
     </div>
+    
+    <script src="app.js"></script>
 </body>
 
 </html>
