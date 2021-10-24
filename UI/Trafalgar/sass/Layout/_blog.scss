@@ -1,0 +1,84 @@
+#blog {
+    margin: 80px 0;
+
+    .blogs {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 50px;
+
+        .blog__title {
+            grid-area: 1 / 1 / span 1 / span 3;
+            text-align: center;
+
+            h2 {
+                font-size: 36px;
+                line-height: 56px;
+                color: black;
+            }
+
+            .line{
+                width: 72px;
+                height: 3px;
+                margin: 19px auto;
+                background: black;
+            }
+        }
+
+        .blog__item {
+            border-radius: 20px;
+            box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+
+            .blog__item--photo {
+                img {
+                    border-radius: 20px;
+                    width: 100%;
+                }
+            }
+
+            .blog__item--text {
+                padding: 34px;
+
+                h4 {
+                    font-size: 21px;
+                    line-height: 35px;
+                    color: black;
+                }
+
+                p {
+                    width: 85%;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #7D7987;
+                    font-weight: 300;
+                    margin: 18px 0px;
+                }
+
+                span {
+                    line-height: 28px;
+                    font-size: 17px;
+                    color: rgba(64, 137, 237, 1);
+                }
+            }
+        }
+
+        .blog__button {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            display: flex;
+            justify-content: center;
+
+            button {
+                border: 1px solid #458FF6;
+                background: white;
+                border-radius: 32px;
+                width: 200px;
+                height: 56px;
+                color: #458FF6;
+                font-size: 18px;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+#header {
+    margin: 0 0 80px 0;
+
+    .header__content {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+
+        .header__content--text {
+            width: 82%;
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 21px;
+                line-height: 36px;
+                color: #7D7987;
+                margin: 25px 0px;
+            }
+
+            button {
+                border: none;
+                background: #458FF6;
+                border-radius: 32px;
+                width: 200px;
+                height: 56px;
+                color: white;
+                font-size: 18px;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+        }
+
+        .header__content--photo {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
