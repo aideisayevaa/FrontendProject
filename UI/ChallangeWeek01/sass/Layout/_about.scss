@@ -1,0 +1,65 @@
+#about {
+    @include section-margin;
+
+    .about {
+        .about__providers {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 60px;
+
+            .about__providers--photo {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .about__providers--text {
+                display: $flex;
+                flex-direction: column;
+                justify-content: $justify-content-center;
+
+                h2 {
+                    @include text-h2
+                }
+
+                p {
+                    @include text-header-p
+                }
+
+                button {
+                    @include button;
+                }
+            }
+        }
+
+        .about__app {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 60px;
+
+            .about__app--text {
+                display: $flex;
+                flex-direction: column;
+                justify-content: $justify-content-center;
+
+                h2 {
+                    @include text-h2
+                }
+
+                p {
+                    @include text-header-p
+                }
+
+                button {
+                    @include button;
+                }
+            }
+
+            .about__app--photo {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

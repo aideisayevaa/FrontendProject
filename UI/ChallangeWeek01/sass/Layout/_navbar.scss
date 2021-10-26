@@ -1,0 +1,47 @@
+#navbar {
+    padding: 40px 0;
+    .logo {
+        display: $flex;
+        align-items: $align-items-center;
+
+        .logo__icon {
+            @include logo;
+            background: $blue;
+            color: $white;
+        }
+
+        .logo__text {
+            @include logo-text;
+            color: $light-black;
+        }
+    }
+
+    .menu {
+        ul {
+            display: $flex;
+            justify-content: space-around;
+
+            li {
+                a {
+                    font-size: 18px;
+                    opacity: 0.5;
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: $light-black;
+
+                    &:active {
+                        font-weight: bold;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .navbar__icon {
+        display: none;
+        float: right;
+        font-size: 33px;
+    }
+}

@@ -18,8 +18,8 @@ body {
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
+    display: $flex;
+    justify-content: $justify-content-between;
 }
 
 a {

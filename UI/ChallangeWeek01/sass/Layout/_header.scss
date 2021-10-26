@@ -4,7 +4,7 @@
     .header__content {
         display: grid;
         grid-template-columns: 2fr 3fr;
-        align-items: center;
+        align-items: $align-items-center;
 
         .header__content--text {
             width: 82%;
@@ -16,20 +16,21 @@
             p {
                 font-size: 21px;
                 line-height: 36px;
-                color: #7D7987;
+                color: $gray;
                 margin: 25px 0px;
             }
 
             button {
+                @include button;
                 border: none;
-                background: #458FF6;
-                border-radius: 32px;
-                width: 200px;
-                height: 56px;
-                color: white;
-                font-size: 18px;
-                letter-spacing: 1px;
-                cursor: pointer;
+                background: $blue;
+                color: $white;
+
+                &:hover {
+                    background: $white;
+                    color: $blue;
+                    border: 1px solid $blue;
+                }
             }
         }
 

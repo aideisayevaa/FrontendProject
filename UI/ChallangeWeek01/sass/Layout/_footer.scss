@@ -1,3 +1,4 @@
+
 #footer {
     margin: 80px 0 0 0;
 
@@ -8,30 +9,22 @@
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
         padding: 70px 0;
-        color: white;
+        color: $white;
 
         .footer__item {
             .logo {
-                display: flex;
-                align-items: center;
+                display: $flex;
+                align-items: $align-items-center;
 
                 .logo__icon {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: white;
-                    border-radius: 50%;
-                    color: #458FF6;
-                    width: 41px;
-                    height: 41px;
-                    font-size: 26px;
+                    @include logo;
+                    background: $white;
+                    color: $blue;
                 }
 
                 .logo__text {
-                    font-size: 24px;
-                    color: white;
-                    font-weight: 700;
-                    margin-left: 12px;
+                    @include logo-text;
+                    color: $white;
                 }
             }
 

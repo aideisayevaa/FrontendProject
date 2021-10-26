@@ -8,19 +8,18 @@
             }
 
             .logo__text {
-                font-size: 24px;
-                color: #233348;
-                font-weight: 700;
-                margin-left: 12px;
+                color: $light-black;
+                @include logo-text
             }
 
         }
 
-        .menu{
+        .menu {
             display: none;
-            
+
         }
-        .navbar__icon{
+
+        .navbar__icon {
             display: block;
         }
 
@@ -51,7 +50,7 @@
 
                 .service__item {
                     grid-column: 1 / 2;
-                    text-align: center;
+                    text-align: $text-align-center;
 
                     p {
                         width: 100%;
@@ -75,7 +74,7 @@
                     margin: 0px 30px;
 
                     .about__providers--text {
-                        align-items: center;
+                        align-items: $align-items-center;
                     }
                 }
 
@@ -84,7 +83,7 @@
                     margin: 0px 30px;
 
                     .about__app--text {
-                        align-items: center;
+                        align-items: $align-items-center;
                     }
                 }
             }
@@ -130,33 +129,14 @@
                 grid-template-columns: 1fr;
 
                 .footer__item {
-                    text-align: center;
-                    border-bottom: 1px solid white;
+                    text-align: $text-align-center;
+                    border-bottom: 1px solid $white;
 
                     .logo {
-                        justify-content: center;
+                        justify-content: $justify-content-center;
                     }
                 }
             }
         }
     }
 }
-
-/* .menu {
-        display: none;
-    } */
-/* 
-    
-
-
-    .testimonials {
-        grid-template-columns: 1fr;
-    }
-
-    .blogs {
-        grid-template-columns: 1fr;
-    }
-
-    .footer {
-        grid-template-columns: 1fr;
-    } */

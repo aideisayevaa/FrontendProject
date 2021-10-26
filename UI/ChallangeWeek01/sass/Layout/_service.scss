@@ -1,0 +1,64 @@
+#service {
+    @include section-margin;
+    position: $position-relative;
+
+    .services__bg {
+        position: $position-absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 1;
+        width: 46%;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 20px;
+        z-index: 2;
+
+        .service__title {
+            grid-area: 1 / 1 / span 1 / span 3;
+            text-align: $text-align-center;
+
+            h2 {
+                @include text-h2;
+            }
+
+            .line {
+                @include line;
+            }
+
+            p {
+                @include text-header-p;
+            }
+        }
+
+        .service__item {
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+            background-color: $white;
+            z-index: 2;
+
+            h4 {
+                @include text-h4
+            }
+
+            p {
+                @include text-p;
+            }
+        }
+
+        .service__button {
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+            display: $flex;
+            justify-content: $justify-content-center;
+
+            button {
+                @include button;
+            }
+        }
+    }
+}
