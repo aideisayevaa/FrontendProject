@@ -15,5 +15,5 @@
 
 - ChallangeWeek01 
     - [Link](https://aideisayevaa.github.io/PragmatechFrontendProject/ChallangeWeek01/)
-    - [Kodlar](https://github.com/aideisayevaa/PragmatechFrontendProject/ChallangeWeek01)
+    - [Kodlar](https://github.com/aideisayevaa/PragmatechFrontendProject/tree/main/ChallangeWeek01)
     - 26.10.2021
