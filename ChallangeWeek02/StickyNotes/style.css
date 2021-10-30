@@ -1,0 +1,70 @@
+.container {
+    position: relative;
+}
+
+.navbar {
+    padding: 36px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-text {
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+.navbar-text span {
+    color: white;
+}
+
+.fas {
+    color: #c2ff3d;
+}
+
+
+.navbar-button button {
+    border: none;
+    padding: 10px 24px;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 9px;
+    font-family: 'Architects Daughter';
+    cursor: pointer;
+}
+
+.navbar-button button:hover {
+    background: #C4A080;
+    border: 1px solid gray;
+    color: white;
+}
+
+#note {
+    font-family: 'Architects Daughter';
+    font-size: 25px;
+    position: absolute;
+    left: 35%;
+    top: 150%;
+    padding: 40px;
+    box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
+    -webkit-box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
+    -moz-box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
+}
+
+
+form .far {
+    cursor: pointer;
+    color: #757575;
+    font-size: 33px;
+    position: absolute;
+    top: 158%;
+}
+
+.fa-times-circle {
+    left: 66%;
+}
+
+.fa-check-circle {
+    left: 63%;
+}
