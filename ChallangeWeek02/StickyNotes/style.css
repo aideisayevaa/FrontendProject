@@ -40,7 +40,7 @@
     color: white;
 }
 
-#note {
+.note {
     font-family: 'Architects Daughter';
     font-size: 25px;
     position: absolute;
@@ -51,7 +51,6 @@
     -webkit-box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
     -moz-box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
 }
-
 
 form .far {
     cursor: pointer;
