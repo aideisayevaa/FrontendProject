@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Horizontal Scroll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Mustache Complice</h1>
+            <p>Fashionable garments since 1986</p>
+        </div>
+
+        <div class="images">
+            <div class="image">
+                <div class="bg-text">
+                    <span>must</span><br>
+                    <span>ache</span>
+                </div>
+            </div>
+            <div class="image">
+                <h1>01</h1>
+                <img src="./img/1.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>02</h1>
+                <img src="./img/2.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>03</h1>
+                <img src="./img/3.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>04</h1>
+                <img src="./img/4.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>05</h1>
+                <img src="./img/5.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>06</h1>
+                <img src="./img/6.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>07</h1>
+                <img src="./img/7.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>08</h1>
+                <img src="./img/8.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>09</h1>
+                <img src="./img/9.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>10</h1>
+                <img src="./img/10.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>11</h1>
+                <img src="./img/11.jpg" alt="">
+            </div>
+            <div class="image">
+                <h1>12</h1>
+                <img src="./img/12.jpg" alt="">
+            </div>
+            <div class="image">
+                <div class="bg-text">
+                    <span>comp</span><br>
+                    <span>lice</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cursor"></div>
+
+
+    <script src="index.js"></script>
+    <script>
+        var image = document.getElementsByClassName("image");
+        var images = document.getElementsByClassName("images");
+        var hs = new HorizontalScroll.default({
+            blocks: image,
+            container: images,
+            isAnimated: true,
+        });
+
+
+        var cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', function (e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            cursor.style.left = x + "px";
+            cursor.style.top = y + "px";
+        });
+    </script>
+</body>
+
+</html>

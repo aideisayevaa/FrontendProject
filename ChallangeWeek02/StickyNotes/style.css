@@ -1,6 +1,19 @@
-.container {
-    position: relative;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+body {
+    background: #c67c53a8;
+    font-family: 'Architects Daughter';
+    font-size: 24px;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
 
 .navbar {
     padding: 36px 0;
@@ -40,30 +53,47 @@
     color: white;
 }
 
-.note {
+
+.main {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+
+
+.form {
+    display: none;
+    position: absolute;
+    top: 26%;
+    left: 40%;
+}
+
+textarea {
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+    outline: none;
+    border: none;
+    width: 275px;
+    height: 275px;
     font-family: 'Architects Daughter';
+    padding: 40px 25px 25px 25px;
     font-size: 25px;
+}
+
+i {
+    color: gray;
+}
+
+#check-icon {
     position: absolute;
-    left: 35%;
-    top: 150%;
-    padding: 40px;
-    box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
-    -webkit-box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
-    -moz-box-shadow: -1px 1px 21px -9px rgba(85, 81, 81, 0.75);
+    right: 17%;
+    top: 4%;
 }
 
-form .far {
-    cursor: pointer;
-    color: #757575;
-    font-size: 33px;
+#x-icon {
     position: absolute;
-    top: 158%;
-}
-
-.fa-times-circle {
-    left: 66%;
-}
-
-.fa-check-circle {
-    left: 63%;
+    right: 5%;
+    top: 4%;
 }
