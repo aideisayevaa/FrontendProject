@@ -7,6 +7,11 @@
     - [Kodlar](https://github.com/aideisayevaa/PragmatechFrontendProject/tree/main/ChallangeWeek01)
     - 26.10.2021
 
+- ChallangeWeek02
+    - [Link](https://aideisayevaa.github.io/PragmatechFrontendProject/ChallangeWeek02/StickyNotes)
+    - [Kodlar](https://github.com/aideisayevaa/PragmatechFrontendProject/tree/main/ChallangeWeek02/StickyNotes)
+    - 05.11.2021
+
 - Trafalgar
     - [Link](https://aideisayevaa.github.io/PragmatechFrontendProject/Extra/Trafalgar/)
     - [Kodlar](https://github.com/aideisayevaa/PragmatechFrontendProject/tree/main/Extra/Trafalgar)
