@@ -2,18 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>End Page</title>
 </head>
 
 <body>
@@ -22,12 +21,16 @@
         <img src="./img/bg-2.jpg" alt="" class="bg bg-2">
         <img src="./img/bg-3.jpg" alt="" class="bg bg-3">
         <img src="./img/bg-4.jpg" alt="" class="bg bg-4">
-        <div id="home" class="flex-center flex-column">
-            <h1>TRIVIA<br>QUIZ</h1>
-            <a href="./quiz.html" class="btn">Start <i class="far fa-play-circle"></i></a>
-            <span>High Scores: <h1>0</h1></span>
+        <div id="end" class="flex-center flex-column">
+            <p>GAME OVER</p>
+            <span>Score</span> <p id="score">0</p>
+            <div class="end-buttons">
+                <a href="./index.html" class="btn">HOME</a>
+                <a href="./quiz.html" class="btn">RETRY</a>
+            </div>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
