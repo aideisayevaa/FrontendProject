@@ -23,7 +23,7 @@ let questions = [{
     choice2: "RAM",
     choice3: "Motherboard",
     choice4: "Hard drive",
-    answer: 4
+    answer: 1
   },
   {
     question: 'How many points are a touchdown worth?',
@@ -34,11 +34,11 @@ let questions = [{
     answer: 3
   },
   {
-    question: 'Where in Pennsylvania is The Office based',
-    choice1: "Philadelphia",
-    choice2: "Scranton",
-    choice3: "Lancaster",
-    choice4: "Pittsburgh",
+    question: 'Which city is the capital of France?',
+    choice1: "Paris",
+    choice2: "Moscow",
+    choice3: "New York",
+    choice4: "Berlin",
     answer: 1
   }
 ];
