@@ -1,0 +1,1 @@
+document.getElementsById('blue');
