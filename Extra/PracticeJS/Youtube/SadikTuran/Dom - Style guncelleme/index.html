@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title-active {
+            color: yellow;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+
+        .f45 {
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis velit commodi, quam quasi
+        blanditiis dignissimos nobis!</h1>
+
+    <h3 id="sub-title">Lorem, ipsum dolor.</h3>
+
+    <img src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072821__340.jpg" width="500">
+
+
+    <script>
+        var title = document.getElementById('title')
+        /* title.style.color='yellow'
+        title.style.fontSize='45px'
+        title.style.border='1px solid blue'
+        title.style.padding='10px' */
+
+
+        // console.log(title.classList)  //h1 daxiline class="title-active yazanda gelir"
+
+        //asagidaki kod vasitesile h1-e clasi yazmadan kenardaki clasi menimsetdik
+        title.classList.add('title-active')
+        title.classList.add('f45')
+        console.log(title.classList)
+        title.classList.remove('f45')
+        console.log(title.classList)
+        title.classList.toggle('f45') //f45in evvel olub olmadigini yoxlayir ve elva edir yoxdusa varsa silir
+        console.log(title.classList)
+    </script>
+</body>
+
+</html>
