@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-md-4">
+                <ul class="list-group">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var models = [{
+                name: 'lorem1',
+                selected: false
+            },
+            {
+                name: 'lorem2',
+                selected: false
+            },
+            {
+                name: 'lorem3',
+                selected: false
+            },
+            {
+                name: 'lorem4',
+                selected: false
+            },
+            {
+                name: 'lorem5',
+                selected: true
+            },
+            {
+                name: 'lorem6',
+                selected: false
+            },
+            {
+                name: 'lorem7',
+                selected: false
+            },
+            {
+                name: 'lorem8',
+                selected: true
+            },
+        ]
+
+        var html = document.querySelector('.list-group')
+        models.forEach(function (model) {
+            var li = ''
+            if (model.selected) {
+                li = '<li class="list-group-item active">' + model.name + '</li>'
+            } else {
+                li = '<li class="list-group-item">' + model.name + '</li>'
+            }
+
+            html.innerHTML += li
+        })
+    </script>
+</body>
+
+</html>
