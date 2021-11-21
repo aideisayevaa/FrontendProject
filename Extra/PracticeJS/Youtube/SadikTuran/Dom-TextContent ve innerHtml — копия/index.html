@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit <strong>amet</strong> consectetur adipisicing elit.</p>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <script>
+        var p = document.getElementsByTagName('p')[0] //ilk p elementini goturur
+        var ul = document.querySelector('ul')
+
+        // console.log(p)
+        // console.log(p.textContent) //daxilindeki texti goturur
+        // console.log(ul)
+        // console.log(ul.textContent) //daxilindeki texti goturur
+        // console.log(document.body.textContent) //butun textleri getirir
+
+        // p.textContent='asjdkjskdask' //daxilindeki textin evezine bunu yazmaq olar
+        // ul.textContent='liste'  //butun li-lerdeki yazilari silir ve evzine yazir
+
+
+
+
+        p.innerHTML =
+            '<b>asjdkjskdask</b> sdhajshbd ahdwxjsh aHDSJ' //innerHTML textContentden ferqli olaraq text elave edende tag ile elave etmek olur
+
+        ul.innerHTML = '<li>item-a</li><li>item-b</li>' //innerhtml tekce taglari elave etmek ucun yox sadece text elave etmek istesek de isleyir
+        ul.innerHTML ='hdagbhsad'
+    </script>
+</body>
+
+</html>
