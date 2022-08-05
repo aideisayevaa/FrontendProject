@@ -1,6 +1,5 @@
-# PragmatechFrontendProject
+# FrontendProject
 
-## Tədris müddətində gördüyüm işlər
 
 - ChallangeWeek01 
     - [Link](https://aideisayevaa.github.io/PragmatechFrontendProject/ChallangeWeek01/)
